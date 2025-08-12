@@ -7,9 +7,9 @@ const Info = () => {
   useEffect(() => {
     console.log('렌더링 완료');
     console.log({ name, email });
-    // 뒷정리 함수 추가
+    //뒷정리 함수 추가
     return () => {
-      console.log('뒷정리 함수 호출');
+      console.log('뒷정리 함수 호출 ');
       console.log(name);
     };
   }, [email]);
